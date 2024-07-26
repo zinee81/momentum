@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MOMENTUM APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d035e75539.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- <i class="fa-solid fa-person" style="font-size: 50px; color: blue"></i> -->
+    <div class="wrap">
+      <div id="timer">현재시간</div>
+      <div id="ment">인사</div>
+      <div id="nameDiv">이름을 입력해주세요 <input type="text" id="name" /> <button id="nameBtn">입력</button></div>
+      <!-- to do 리스트 -->
+      <div id="todo" class="wrapper">
+        <header>TodoList</header>
+        <div class="inputField">
+          <input type="text" id="addValue" placeholder="할 일 추가하기" autofocus /><!--자동포커스-->
+          <button type="button" id="todoBtn" onclick="addTodo()"><i class="fa-solid fa-square-plus"></i></button>
+        </div>
+        <div>
+          <ul id="addTodo" class="Todolist">
+            <li><div id="result"></div></li>
+          </ul>
+        </div>
+        <div class="footer">
+          <button type="button" id="allClear" onclick="allClearList()">모두 삭제</button>
+        </div>
+      </div>
+
+      <div id="saying">명언</div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

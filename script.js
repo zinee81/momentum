@@ -68,10 +68,10 @@ function addTodo() {
     del.addEventListener("click", deleteList); //삭제버튼 클릭시 리스트지우기 이벤트 실행
     del.style.position = "relative";
     list.appendChild(del); //할일 리스트 추가시 삭제버튼도 추가
+    result.appendChild(list); //추가된 할일에 할일 리스트 추가하기
 
     /*할일 추가할 때마다 삭제버튼도 같이 추가돼기-이 방법도 가능 */
     // list.innerHTML += "<button type='button' id ='removeBtn' onclick='deleteList()'><i class='fa-solid fa-xmark'></i></button>";
-    result.appendChild(list); //추가된 할일에 할일 리스트 추가하기
 
     addValue.value = ""; //할일 입력창 초기화
     addValue.focus(); //강제 커서 깜빡임
